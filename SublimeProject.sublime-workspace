@@ -1,0 +1,613 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"alig",
+				"align-content\tproperty"
+			],
+			[
+				"text-de",
+				"text-decoration-style\tproperty"
+			],
+			[
+				"Wo",
+				"WordDiscrimination"
+			],
+			[
+				"pos",
+				"background-position\tproperty"
+			],
+			[
+				"back",
+				"background-size\tproperty"
+			],
+			[
+				"row",
+				"row-reverse\tflex-direction"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"space",
+				"space-around\tjustify-content"
+			],
+			[
+				"no",
+				"nowrap\twhite-space"
+			],
+			[
+				"wrap",
+				"word-wrap\tproperty"
+			],
+			[
+				"backgroun",
+				"background-position\tproperty"
+			],
+			[
+				"scr",
+				"scripts"
+			],
+			[
+				"fa",
+				"font-family\tproperty"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"ali",
+				"align-self\tproperty"
+			],
+			[
+				"spa",
+				"space-around\tjustify-content"
+			],
+			[
+				"repe",
+				"repeat-x\tbackground-repeat"
+			],
+			[
+				"bac",
+				"background-size\tproperty"
+			],
+			[
+				"dec",
+				"text-decoration\tproperty"
+			],
+			[
+				"align",
+				"align-self\tproperty"
+			],
+			[
+				"shaw",
+				"text-shadow\tproperty"
+			],
+			[
+				"fl",
+				"flex-start\talign-content"
+			],
+			[
+				"backou",
+				"background-size\tproperty"
+			],
+			[
+				"bc",
+				"background-color\tproperty"
+			],
+			[
+				"marin",
+				"margin-top\tproperty"
+			],
+			[
+				"fle",
+				"flex-end\talign-self"
+			],
+			[
+				"objec",
+				"object-position\tproperty"
+			],
+			[
+				"oj",
+				"object-position\tproperty"
+			],
+			[
+				"blo",
+				"blogBackgroundColor"
+			],
+			[
+				"ba",
+				"background-size\tproperty"
+			],
+			[
+				"dir",
+				"flex-direction\tproperty"
+			],
+			[
+				"le",
+				"letter-spacing\tproperty"
+			],
+			[
+				"background",
+				"background-color\tproperty"
+			],
+			[
+				"cent",
+				"align-content\tproperty"
+			],
+			[
+				"grid-colum",
+				"grid-column-start\tproperty"
+			],
+			[
+				"backgrou",
+				"background-color\tproperty"
+			],
+			[
+				"backgoru",
+				"background-color\tproperty"
+			],
+			[
+				"backgro",
+				"background-position\tproperty"
+			],
+			[
+				"size",
+				"font-size\tproperty"
+			],
+			[
+				"trans",
+				"translateZ()\ttransform"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"Par",
+				"ParallaxContainer2"
+			],
+			[
+				"alli",
+				"align-self\tproperty"
+			],
+			[
+				"f",
+				"flex-start\tjustify-content"
+			],
+			[
+				"space-",
+				"space-between\tjustify-content"
+			],
+			[
+				"landing",
+				"landingBackgroundPage"
+			],
+			[
+				"parallax",
+				"parallaxWrapper"
+			],
+			[
+				"coffee",
+				"CoffeeScript"
+			],
+			[
+				"the",
+				"therubyracer"
+			],
+			[
+				"ce",
+				"center-fit"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"ble",
+				"blue-text"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Files/CodingProjects/ReactApp/MorseApp/App.js",
+			"settings":
+			{
+				"buffer_size": 160,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"outline",
+				"Browse Mode: Outline (Right)"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"view in ",
+				"View In Browser"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"ls",
+			"dir",
+			"python"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Files/CodingProjects/DubHacks2019",
+		"/C/Files/CodingProjects/DubHacks2019/MyReactNative"
+	],
+	"file_history":
+	[
+		"/C/Files/CodingProjects/Terminal/C1GamesStarterKit/scripts/README.md",
+		"/C/Files/CodingProjects/Terminal/C1GamesStarterKit/README.md",
+		"/C/Files/CodingProjects/Terminal/C1GamesStarterKit/game-configs.json",
+		"/C/Files/CodingProjects/Terminal/new-meta/game-configs.json",
+		"/C/Users/theon/Downloads/game-config-16/game-configs.json",
+		"/C/Files/CodingProjects/Terminal/C1GamesStarterKit-master/C1GamesStarterKit-master/README.md",
+		"/C/Users/theon/Downloads/C1GamesStarterKit-master/C1GamesStarterKit-master/python-algo/algo_strategy.py",
+		"/C/Users/theon/Downloads/C1GamesStarterKit-master/C1GamesStarterKit-master/python-algo/README.md",
+		"/C/Users/theon/Downloads/C1GamesStarterKit-master/C1GamesStarterKit-master/README.md",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2019-08-16-Update.md",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2019-09-20--- --- .-. ... ..md",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2019-01-10-Genesis.md",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/archive/index.html",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/archiveStyles.css",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/index.html",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/blogstyles.css",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/footer.css",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/about.html",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/about.css",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-12-20-presentationPlaceholder.markdown",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-09-18-blogPostPlaceholder4.markdown",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/PageStyles.css",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-09-20-blogPostPlaceholder2.markdown",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-09-19-blogPostPlaceholder3.markdown",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-09-21-blogPostPlaceholder1.markdown",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_includes/footer.html",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/header.css",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_includes/header.html",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-12-21-projectPlaceholder.markdown",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2019-03-30-YearInReview.md",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-12-22-projectPlaceholder2.markdown",
+		"/C/Files/Lynda/WebDesign/blog/_posts/2015-06-29-markdown-basics.md",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_layouts/post.html",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/blog/index.html",
+		"/C/Files/CodingProjects/XNOR/sdk_beta0.10/lib/README.md",
+		"/C/Files/CodingProjects/XNOR/collectingData.py",
+		"/C/Files/CodingProjects/reactbook/react/README.md",
+		"/C/Files/Lynda/WebDesign/blog/_posts/2015-04-30-basic-commands.md",
+		"/C/Files/SEAL/ObjectDetection/camera-test.py",
+		"/C/Files/CodingProjects/NWHacks2019/NWHacks2019/InstagramDataScraping.py",
+		"/C/Files/CodingProjects/PythonProjects/myUWTransactions.py",
+		"/C/Files/CodingProjects/NWHacks2019/NWHacks2019/InstaPost.py",
+		"/C/Files/CodingProjects/NWHacks2019/NWHacks2019/templates/index.html",
+		"/C/Files/CodingProjects/NWHacks2019/NWHacks2019/templates/layout.html",
+		"/C/Files/CodingProjects/NWHacks2019/NWHacks2019/README.md",
+		"/C/Files/CodingProjects/WINFO2019/InstagramDataScraping.py",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/arthurTest.py",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/spacing.py",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/pygameTest.py",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/car.py",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/symbolMatching.py",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/Color.py",
+		"/C/Files/SEAL/SEALGithub/glimpse-cam/GlimpseCam.py",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/testChangeButton.py",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/tetrisTest.py",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/numberofright.txt",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/wordDiscrimination.py",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/index.html",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_layouts/default.html",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_includes/head.html",
+		"/C/Files/CodingProjects/WINFO2019/winfo-2019/README.md",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/projects/index.html",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/images/postImages/2019-01-10-BrainstormingForWebsite.jpg",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/presentations/index.html",
+		"/C/Files/CodingProjects/WebDevelopment/myPersonalWebsite/arthurjl.github.io/scripts/fadeInBlogThumbnails.js",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/PageStylesPhone.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_includes/head.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/scripts/fadeInBlogThumbnails.js",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/scripts/fadeInBlog.js",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/index.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/PageStyles.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/archive/index.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/archiveStyles.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/headerPhone.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/header.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_includes/header.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/about.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/about.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/blogStylesPhone.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/blogstyles.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-12-22-projectPlaceholder2.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/archiveStylesPhone.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/about.md",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/scripts/smoothScroll.js",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/scripts/headerOpenMenu.js",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/footerPhone.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_config.yml",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_layouts/defaultWithFade.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/footer.css",
+		"/C/Users/theon/Desktop/test.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-12-20-presentationPlaceholder.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/javascriptStyles.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-09-21-blogPostPlaceholder1.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-09-20-blogPostPlaceholder2.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-09-19-blogPostPlaceholder3.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-12-21-projectPlaceholder.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-09-18-blogPostPlaceholder4.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/highlight.css",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/scripts/loadingFade.js",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/css/javascriptStyles",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_includes/footer.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/blog/index.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/404.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-05-18-blogPost1.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-05-17-testBlog3.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-01-17-testBlog2.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/presentations/index.html",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-03-17-testBlog.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-05-19-blogPost2.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/_posts/2018-05-20-blogPost3.markdown",
+		"/C/Files/WebDevelopment/myPersonalWebsite/arthurjl.github.io/images/rulerLongBlue.png",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/_includes/footer.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/archive/index.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/presentations/index.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/projects/index.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/_includes/head.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/_layouts/default.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/_includes/header.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/_layouts/post.html",
+		"/C/Files/Lynda/WebDesign/blog/index.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/css/archiveStyles.css",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/blog/index.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/css/blogstyles.css",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/_config.yml",
+		"/C/Files/WebDevelopment/arthurjlGitHub/arthurjl.github.io/_config.yml",
+		"/C/Files/Lynda/WebDesign/blog/tags/index.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/index.html",
+		"/C/Files/WebDevelopment/publishedPersonalWebsite/css/PageStyles.css"
+	],
+	"find":
+	{
+		"height": 39.2
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Files/CodingProjects/ReactApp/MorseApp/App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 150.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "SublimeProject.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Files\\SEAL\\SealSublimeProject.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 205.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
