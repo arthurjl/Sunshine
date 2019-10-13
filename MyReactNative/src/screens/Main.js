@@ -3,6 +3,9 @@ import Swiper from "react-native-web-swiper";
 
 import WeatherScreen from './WeatherScreen.js';
 import MusicScreen from './MusicScreen.js';
+import MusicPlayer from '../MusicPlayer.js';
+
+
 
 import {
   Text,
@@ -25,10 +28,19 @@ export default class Screen extends React.Component {
                   showsPagination={false}
                 >
                     <View style={[styles.slideContainer,styles.slide1]}>
-                        <WeatherScreen weather="sunny"/>
+                        <WeatherScreen weather="sunny" navigation={this.props.navigation} />
+                    </View>
+                    <View style={[styles.slideContainer,styles.slide1]}>
+                        <WeatherScreen weather="cloudy" navigation={this.props.navigation}/>
+                    </View>
+                    <View style={[styles.slideContainer,styles.slide1]}>
+                        <WeatherScreen weather="thunder" navigation={this.props.navigation}/>
                     </View>
                     <View style={[styles.slideContainer,styles.slide3]}>
                         <MusicScreen/>
+                    </View>
+                    <View>
+                      <MusicPlayer />
                     </View>
                 </Swiper>
             </View>

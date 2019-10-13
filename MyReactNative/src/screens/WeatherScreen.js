@@ -7,6 +7,7 @@ import {
   AsyncStorage,
   Image,
   Dimensions,
+  Button,
 } from 'react-native';
 
 import { LinearGradient } from 'expo-linear-gradient';
@@ -14,11 +15,13 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 export default class WeatherScreen extends React.Component {
   state = {
-    weather: this.props.weather
+    weather: this.props.weather,
+    navigation: this.props.navigation
   }
 
+
   render() {
-    console.log(deviceWidth);
+
     return (
       <LinearGradient 
         colors={this.state.weather === 'sunny' ? sunny : this.state.weather === 'cloudy' ? cloudy : thunder}
@@ -27,7 +30,10 @@ export default class WeatherScreen extends React.Component {
         { this.state.weather === 'sunny' ? <Image source={require('../assets/Images/sun.png')}  style={styles.iconSize} /> : null}
         { this.state.weather === 'cloudy' ? <Image source={require('../assets/Images/clouds.png')}  style={styles.iconSize} /> : null}
         { this.state.weather === 'thunder' ? <Image source={require('../assets/Images/storm.png')}  style={styles.iconSize} /> : null}      
-
+        <Button
+           title="To Song"
+          onPress={() => this.state.navigation.navigate('Home')}
+        />
       </LinearGradient>
     );
   }

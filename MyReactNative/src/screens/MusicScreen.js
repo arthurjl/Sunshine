@@ -9,6 +9,7 @@ import {
   Dimensions,
 } from 'react-native';
 
+
 import { LinearGradient } from 'expo-linear-gradient';
 
 
@@ -24,7 +25,7 @@ export default class MusicScreen extends React.Component {
       >
 
         <View style={styles.umbrellaContainer}>
-
+           <Image source={require('../assets/Images/greenumbrella.png')}  style={styles.iconSize} />
         </View>
 
         <View style={styles.musicPlayerContainer}>
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
     width: deviceWidth,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'purple',
+    backgroundColor: 'grey',
   },
 
 
@@ -62,18 +63,13 @@ const styles = StyleSheet.create({
     width: deviceWidth,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'green'
+    backgroundColor: 'darkblue'
   },
 
   iconSize: {
     width: 200,
     height: 200
   },
-
-  weather: {
-
-
-  }
 
 
 });
