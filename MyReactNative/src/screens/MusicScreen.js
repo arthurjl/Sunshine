@@ -6,35 +6,63 @@ import {
   Alert,
   AsyncStorage,
   Image,
+  Dimensions,
 } from 'react-native';
 
 import { LinearGradient } from 'expo-linear-gradient';
 
 
-export default class WeatherScreen extends React.Component {
+export default class MusicScreen extends React.Component {
 
 
   render() {
+
     return (
       <LinearGradient 
-        colors={['#7DBCDE', '#01BFFF', '#7DBCDE']}
+        colors={['#AEAFAF', '#C2C2C2', '#C2C2C2', '#2F373F']}
         style={styles.container}
       >
-         
-          <Image source={require('../assets/Images/sun.png')}  style={styles.iconSize} />
+
+        <View style={styles.umbrellaContainer}>
+
+        </View>
+
+        <View style={styles.musicPlayerContainer}>
+
+        </View>
 
       </LinearGradient>
     );
   }
 }
 
+const deviceWidth = Dimensions.get('window').width
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: 1000,
+    width: deviceWidth,
     alignItems: 'center',
     justifyContent: 'center',
-    flexDirection: 'row',
+    flexDirection: 'column',
+  },
+
+
+  umbrellaContainer: {
+    flex: 2,
+    width: deviceWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'purple',
+  },
+
+
+  musicPlayerContainer: {
+    flex: 1,
+    width: deviceWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'green'
   },
 
   iconSize: {
