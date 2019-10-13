@@ -22,5 +22,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'pink',
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'row',
   },
 });

@@ -230,6 +230,65 @@
 				"buffer_size": 160,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "MyReactNative/App.js",
+			"settings":
+			{
+				"buffer_size": 616,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "MyReactNative/src/screens/Main.js",
+			"settings":
+			{
+				"buffer_size": 454,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "MyReactNative/src/screens/WeatherScreen.js",
+			"settings":
+			{
+				"buffer_size": 728,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "MyReactNative/src/screens/MusicScreen.js",
+			"settings":
+			{
+				"buffer_size": 769,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "import React from 'react';\nimport {\n  Text,\n  StyleSheet,\n  View,\n  Button\n} from 'react-native';\nimport MorseButton from '../components/MorseButton.js';\nimport Question from '../components/Question.js';\nimport GLOBALS from '../constants/Globals.js';\nimport InputScreen from '../components/InputScreen.js';\n\n\nexport default class GameScreen extends React.Component {\n  state = {\n    translatedCode: {\n      code: '',\n      correct: false,\n      morseCode: '',\n      numWrong: 0,\n    },\n    timerID: '',\n    questionData: this.props.navigation.state.params.questionData,\n    questionIndex: 0,\n    startingTime: new Date(),\n    numWrong: 0,\n  }\n\n  getFlatListRef = (ref) => {\n    this.flatListRef = ref;\n  }\n\n  sendCode = (code) => {\n    // console.log(code);\n    // this.flatListRef.scrollToEnd({animated: true}); \n    // this.flatListRef.scrollToIndex({animated: true, index: 3, viewPosition: 0.5})\n\n    clearTimeout(this.state.timerID);\n\n    this.setState(prevState => {\n\n      const newCode = prevState.translatedCode.morseCode + code;\n      // console.log(\"new code is: \" + prevState.morseCode + \" + \" + code + \" = \" + newCode);\n      \n      const newTimerID = setTimeout(() => this.displayTranslate(newCode), GLOBALS.TIME_UNTIL_DISPLAY);\n\n      const newState = {\n        ...prevState,\n        translatedCode: {...prevState.translatedCode, morseCode: newCode},\n        timerID: newTimerID,\n      }\n\n      return {...newState};\n    });\n  }\n\n  displayTranslate = (code) => {\n    const translation = this.findValue(code);\n    const correct = this.state.questionData.length > this.state.questionIndex && translation === this.state.questionData[this.state.questionIndex].letter;\n\n\n\n\n    this.setState(prevState => {\n      if (correct) {\n        const index = this.state.questionIndex + 1 >= this.state.questionData.length ? \n            this.state.questionIndex :\n            this.state.questionIndex + 1;\n        this.flatListRef.scrollToIndex({animated: true, index: index, viewPosition: 0.5})\n\n        const clone = this.state.questionData.slice(0);\n        clone[this.state.questionIndex] = {\n          ...clone[this.state.questionIndex],\n          shouldDisplayCode: true,\n          isCompleted: true,\n        };\n        return {\n          ...prevState,\n          translatedCode: {correct: correct, code: translation, morseCode: '', numWrong: 0},\n          questionIndex: this.state.questionIndex + 1,\n          questionData: clone,\n        };\n      } else {\n        if (prevState.translatedCode.numWrong === 3) {\n          let clone = this.state.questionData.slice(0);\n          clone[this.state.questionIndex] = {\n            ...clone[this.state.questionIndex],\n            shouldDisplayCode: true,\n          }\n          return {\n            ...prevState,\n            translatedCode: {...prevState.translatedCode, correct: correct, code: translation, morseCode: ''},\n            questionData: clone,\n            numWrong: prevState.numWrong + 1,\n          }\n        }\n        return {\n          ...prevState,\n          translatedCode: {...prevState.translatedCode, correct: correct, code: translation, morseCode: '', numWrong: prevState.translatedCode.numWrong + 1},\n          numWrong: prevState.numWrong + 1,\n        };\n      }\n    });\n\n\n    if (this.state.questionIndex >= this.state.questionData.length) {\n      let endTime = new Date();\n      this.props.navigation.replace('GameOver', { \n        par: this.props.navigation.state.params.par,\n        time: endTime.getTime() - this.state.startingTime.getTime(),\n        numWrong: this.state.numWrong,\n        questionData: this.props.navigation.state.params.questionData,\n        score: this.props.navigation.state.params.score,\n        updateScore: (newScore) => this.props.navigation.state.params.updateScore(newScore),\n        playAgain: () => this.props.navigation.state.params.playAgain(),\n      });\n    } else {\n      setTimeout(() => this.setState(prevState => {\n        return {...prevState, translatedCode: {...prevState.translatedCode, correct: false, code: ''}};\n      }), GLOBALS.TIME_DISPLAYED);\n    }\n  }\n\n  findValue = (code) => {\n    // console.log(\"Looking for code: \" + code);\n    if (GLOBALS.CODE.hasOwnProperty(code)) {\n      // console.log(\"new code is a letter: \" + GLOBALS.CODE[code]);\n      return GLOBALS.CODE[code];\n    } else {\n      return '{}';\n    }\n  }\n\n  render() {\n\n    return (\n      <View style={styles.container}>\n        \n        <View style={styles.questionsContainer}>\n          <Button\n            title=\"Back to Levels\"\n            onPress={() => this.props.navigation.navigate('Levels')}\n          />\n          <Question questions={this.state.questionData} getRef={this.getFlatListRef} />\n          \n        </View>\n\n        \n\n        <View style={styles.inputContainer}>\n          <View style={styles.codeScreen}>\n              <InputScreen display={this.state.translatedCode} />            \n          </View>\n          <View style={styles.buttonsContainer}>\n            <MorseButton morseValue='.' sendCode={this.sendCode} backgroundColor='#E5D352'/>\n            <MorseButton morseValue='-' sendCode={this.sendCode} backgroundColor='#D9E76C'/>\n          </View>\n        </View>\n      </View>\n    );\n  }\n}\n\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    backgroundColor: 'grey',\n    alignItems: 'center',\n    justifyContent: 'space-between',\n  },\n  questionsContainer: {\n    alignSelf: 'stretch',\n    flex: 5,\n    backgroundColor: '#F2EFEA',\n    alignItems: 'center',\n    justifyContent: 'center'\n  },\n  buttonsContainer: {\n    flexDirection: 'row',\n    alignSelf: 'stretch',\n    flex: 5,\n    backgroundColor: 'white'\n  },\n  inputContainer: {\n    alignSelf: 'stretch',\n    flex: 2,\n  },\n  codeScreen: {\n    flex: 1,\n    alignSelf: 'stretch',\n  }\n});\n\nconst createQuestion = (letter, questionNumber) => ({\n  key: questionNumber,\n  letter: letter,\n  shouldDisplayCode: false,\n  isCompleted: false,\n});\n\n\nconst sampleInput = [\n  createQuestion('a', '1'),\n  createQuestion('b', '2'),\n  createQuestion('c', '3'),\n  createQuestion('d', '4'),\n  createQuestion('a', '5'),\n  createQuestion('g', '6'),\n  createQuestion('c', '7'),\n  \n];\n\n",
+			"file": "MyReactNative/src/screens/GameScreen.js",
+			"file_size": 6361,
+			"file_write_time": 132120398500217147,
+			"settings":
+			{
+				"buffer_size": 6149,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"file": "MyReactNative/src/constants/Globals.js",
+			"file_size": 1347,
+			"file_write_time": 132118884880401785,
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -320,7 +379,13 @@
 	"expanded_folders":
 	[
 		"/C/Files/CodingProjects/DubHacks2019",
-		"/C/Files/CodingProjects/DubHacks2019/MyReactNative"
+		"/C/Files/CodingProjects/DubHacks2019/MyReactNative",
+		"/C/Files/CodingProjects/DubHacks2019/MyReactNative/src",
+		"/C/Files/CodingProjects/DubHacks2019/MyReactNative/src/assets",
+		"/C/Files/CodingProjects/DubHacks2019/MyReactNative/src/assets/Images",
+		"/C/Files/CodingProjects/DubHacks2019/MyReactNative/src/components",
+		"/C/Files/CodingProjects/DubHacks2019/MyReactNative/src/constants",
+		"/C/Files/CodingProjects/DubHacks2019/MyReactNative/src/screens"
 	],
 	"file_history":
 	[
@@ -486,7 +551,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -503,6 +568,174 @@
 						[
 							[
 								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "MyReactNative/App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 616,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								616
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "MyReactNative/src/screens/Main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								444,
+								444
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "MyReactNative/src/screens/WeatherScreen.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 728,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								457,
+								457
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 15.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "MyReactNative/src/screens/MusicScreen.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								762,
+								762
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "MyReactNative/src/screens/GameScreen.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 6149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								98,
+								153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2452.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "MyReactNative/src/constants/Globals.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
 								0
 							]
 						],
@@ -514,7 +747,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -605,7 +838,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 205.0,
+	"side_bar_width": 263.0,
 	"status_bar_visible": false,
 	"template_settings":
 	{

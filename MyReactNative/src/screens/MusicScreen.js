@@ -17,7 +17,7 @@ export default class WeatherScreen extends React.Component {
   render() {
     return (
       <LinearGradient 
-        colors={weather.sunny}
+        colors={['#7DBCDE', '#01BFFF', '#7DBCDE']}
         style={styles.container}
       >
          
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
 
   weather: {
-    sunny: ['#7DBCDE', '#01BFFF', '#7DBCDE'],
+
 
   }
 
